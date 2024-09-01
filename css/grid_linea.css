@@ -1,0 +1,26 @@
+@import url(predeterminado.css);
+.grid-linea {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.contenedor .item:nth-child(14) {
+  background-color: brown;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.contenedor .item:nth-child(5) {
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 2/4;
+  grid-column: 1/3;
+}
