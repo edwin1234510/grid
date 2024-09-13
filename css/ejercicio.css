@@ -1,0 +1,29 @@
+@import url(predeterminado.css);
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.grid_ejercicio{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+  "header header header header header header header"
+  "sidebar-left container container container container container container";
+}
+.header{
+  grid-area: header;
+  background-color: #525252;
+}
+.sidebar-left{
+  grid-area: sidebar-left;
+  background-color: #131313;
+}
+.container{
+  grid-area: container;
+  background-color: #bbbbbb;
+}

@@ -1,21 +1,30 @@
 @import url(predeterminado.css);
+body{
+  height: 100vh;
+}
 .grid_areas {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr;
+  gap: 10px;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 100px 1fr;
   grid-template-areas:
-    "header header"
-    "sidebar content";
+  "header header header header header header"
+  ". sidebar-left container container sidebar-rigth .";
 }
+
 .header {
   grid-area: header;
   background-color: brown;
 }
-.sidebar {
-  grid-area: sidebar;
+.sidebar-left {
+  grid-area: sidebar-left;
   background-color: steelblue;
 }
-.content {
-  grid-area: content;
+.container {
+  grid-area: container;
   background-color: rgb(111, 105, 152);
+}
+.sidebar-rigth  {
+  grid-area: sidebar-rigth ;
+  background-color: steelblue;
 }
