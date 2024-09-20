@@ -1,0 +1,19 @@
+@import url(predeterminado.css);
+.grid-alineamiento{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(2,200px);
+  justify-items: stretch;
+  justify-items: center;
+  justify-items: end;
+  justify-items: start;
+
+  align-items: center;
+  justify-items: center;
+}
+.item:nth-child(5){
+  background-color: brown;
+  color: white;
+  align-self: end;
+  justify-self: end;
+}
